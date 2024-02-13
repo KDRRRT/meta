@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="cont1">
+    <div class="sidebar">
+      <div class=" side d-flex flex-column flex-shrink-0 p-3 bg-body-white" >
+          <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="sidebar_icon main_side" src="./pics/free-icon-crypto-9308135.png" width="32px" height="32px">
+            <span class="fs-4">My Wallet</span>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page" data-section="dashboard">
+                <img class="sidebar_icon" src="./pics/home.png" width="16px" height="16px">
+                <div class="side_name"> Dashboard</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="explore" style="color: black;">
+                <img class="sidebar_icon" src="./pics/compass.png" width="16px" height="16px">
+                <div class="side_name">Explore</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="buy" style="color: black;">
+                <img class="sidebar_icon" src="./pics/selection-on.png" width="16px" height="16px">
+                <div class="side_name">Buy</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="sell" style="color: black;">
+                <img class="sidebar_icon" src="./pics/selection-off.png" width="16px" height="16px">
+                <div class="side_name">Sell</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="swap" style="color: black;">
+                <img class="sidebar_icon" src="./pics/refresh-2.png" width="16px" height="16px">
+                <div class="side_name">Swap</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="bridge" style="color: black;">
+                <img class="sidebar_icon" src="./pics/forward.png" width="16px" height="16px" fill="none">
+                <div class="side_name">Bridge</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="send" style="color: black;">
+                <img class="sidebar_icon" src="./pics/send.png" width="16px" height="16px">
+                <div class="side_name">Send/Recieve</div>
+              </a>
+            </li>
+          </ul>
+          <hr>
+          <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+              <strong>Account</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="#">New wallet</a></li>
+              <li><a class="dropdown-item" id ="theme_toggle" href="#">Dark theme</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+        <span class="side-close">&times;</span>
+  </div>
+  </div>
+  <div class="container">
+    <div class="section dashboard" id="dashboard">
+      <div class="header">
+        <div class="header_name">Dashboard</div>
+        <div class="header_btn">
+          <img class = "mobile_side" src = "./pics/menu.png" width="32px" height="32px">
+          <button class="button header_but">Connect Wallet</button></div>
+      </div>
+      <div class="content">
+        <div class="content_info">
+          <div class="info_main">Get started with Wallet Portfolio</div>
+          <div class="info">Get a clear, comprehensive view of your accounts and wallets, across all networks. Connect a MetaMask wallet or watch any Ethereum address.</div>
+          <div class="info_buttons">
+            <button class="button">Watch an address</button>
+            <button class="button">Connect Wallet</button>
+          </div>
+        </div>
+
+        <div class="dash_options">
+          <div class="dash_opt">
+            <div class="opt_img"></div>
+            <div class="opt_name">Easily on-ramp or off-ramp</div>
+            <div class="opt_info">Convert cash to crypto or crypto for cash while maintaining control of your assets, no centralized exchange necessary.</div>
+            <div class="opt_btn"><button class="button">Buy crypto</button></div>
+          </div>
+          <div class="dash_opt">
+            <div class="opt_img"></div>
+            <div class="opt_name">Move your crypto almost anywhere</div>
+            <div class="opt_info">Seamlessly swap, bridge, and send crypto in the same place you manage all of your assets.</div>
+            <div class="opt_btn"><button class="button">Send crypto</button></div>
+          </div>
+          <div class="dash_opt">
+            <div class="opt_img"></div>
+            <div class="opt_name">Diversify your portfolio with DeFi</div>
+            <div class="opt_info">Track and manage all your assets, stake with multiple providers, set spending caps, and more.</div>
+            <div class="opt_btn"><button class="button">Stake crypto</button></div>
+          </div>
+        </div>
+        <div class="content_info">
+          <div class="info_main">Self-custody is easy with UniBlockchain Portfolio</div>
+          <div class="info">UniBlockchain is the leading self-custodial wallet. The safe and simple way to access blockchain applications and web3. Trusted by millions of users worldwide.</div>
+          <div class="info_buttons">
+            <button class="button">Explore Web3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section explore" id="explore">
+      <div class="header">
+        <div class="header_name">Explore</div>
+        <div class="header_btn header2">
+          <div class="search_form">
+            <input class = "search_text" placeholder="Search for a token..." type="text">
+            <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+        </div>
+        <div class="header2_not">
+          <img src="./pics/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img  class = "mobile_side1" src = "./pics/menu.png" width="32px" height="32px">
+          <button class="button header2_btn header_but">Connect Wallet</button>
+        </div>
+      </div>
+      </div>
+      <div class="tokens_table">
+            <div class="table_name">Tokens</div>
+            <div class="token_chose">
+              <a href="#" class="main_chose_link" data-table="table-1">Top Gains</a>
+              <a href="#" class="main_chose_link" data-table="table-2">Top Losses</a>
+              <a href="#" class="main_chose_link" data-table="table-3">Watchlist</a>
+            </div>
+
+            <div class="table" id="table-1">
+              <table >
+                <tr class="mob_none">
+                  <th></th>
+                  <th >Token</th>
+                  <th >Price</th>
+                  <th >1hr %</th>
+                  <th >24hr %</th>
+                  <th >7d %</th>
+                  <th >Market cap</th>
+                  <th >Last 7d</th>
+                </tr>
+                <tr class="tok_row">
+                  <td><img src="./pics/star.png" width="25px" height="25px"></td>
+                    <td>
+                      <div class="token_item">
+                        <img src="./pics/globe.png" width="32px" height="32px">
+                        <div class="token_name">Token</div>
+                      </div>
+                    </td>
+                    <td>$0.16</td>
+                    <td class="mob_none">2.83%</td>
+                    <td class="mob_none">32.32%</td>
+                    <td class="mob_none">89.45%</td>
+                    <td class="mob_none">$32,435,876.23</td>
+                    <td class="mob_none"></td>
+              </tr>
+              <tr class="tok_row">
+                <td><img src="./pics/star.png" width="25px" height="25px"></td>
+                  <td>
+                <div class="token_item">
+                    <img src="./pics/globe.png" width="32px" height="32px">
+                    <div class="token_name">Token</div>
+                  </div>
+                </td>
+                <td>-$0.16</td>
+                <td class="mob_none">2.83%</td>
+                <td class="mob_none">32.32%</td>
+                <td class="mob_none">89.45%</td>
+                <td class="mob_none">$32,435,876.23</td>
+                <td class="mob_none"></td>
+              </tr>
+              <tr class="tok_row">
+                <td><img src="./pics/star.png" width="25px" height="25px"></td>
+                <td>
+                  <div class="token_item">
+                    <img src="./pics/globe.png" width="32px" height="32px">
+                    <div class="token_name">Token</div>
+                  </div>
+                </td>
+                <td>$0.16</td>
+                <td class="mob_none">2.83%</td>
+                <td class="mob_none">-32.32%</td>
+                <td class="mob_none">-89.45%</td>
+                <td class="mob_none">$32,435,876.23</td>
+                <td class="mob_none"></td>
+              </tr>
+              <tr class="tok_row">
+                <td><img src="./pics/star.png" width="25px" height="25px"></td>
+                <td>
+                  <div class="token_item">
+                    <img src="./pics/globe.png" width="32px" height="32px">
+                    <div class="token_name">Token</div>
+                  </div>
+                </td>
+                <td>$0.16</td>
+                <td class="mob_none">2.83%</td>
+                <td class="mob_none">32.32%</td>
+                <td class="mob_none">89.45%</td>
+                <td class="mob_none">$32,435,876.23</td>
+                <td class="mob_none"></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="table" id="table-2">
+            <table >
+              <tr class="mob_none">
+                <th></th>
+                <th>Token</th>
+                <th>Price</th>
+                <th>1hr %</th>
+                <th>24hr %</th>
+                <th>7d %</th>
+                <th>Market cap</th>
+                <th>Last 7d</th>
+              </tr>
+              <tr class="tok_row">
+                <td><img src="./pics/star.png" width="25px" height="25px"></td>
+                  <td>
+                    <div class="token_item">
+                      <img src="./pics/globe.png" width="32px" height="32px">
+                      <div class="token_name">Token</div>
+                    </div>
+                  </td>
+                  <td>$0.16</td>
+                  <td class="mob_none">2.83%</td>
+                  <td class="mob_none">32.32%</td>
+                  <td class="mob_none">89.45%</td>
+                  <td class="mob_none">$32,435,876.23</td>
+                  <td class="mob_none"></td>
+            </tr>
+            <tr class="tok_row">
+              <td><img src="./pics/star.png" width="25px" height="25px"></td>
+                <td>
+              <div class="token_item">
+                  <img src="./pics/globe.png" width="32px" height="32px">
+                  <div class="token_name">Token</div>
+                </div>
+              </td>
+              <td>-$0.16</td>
+              <td class="mob_none">2.83%</td>
+              <td class="mob_none">32.32%</td>
+              <td class="mob_none">89.45%</td>
+              <td class="mob_none">$32,435,876.23</td>
+              <td class="mob_none"></td>
+            </tr>
+            <tr class="tok_row">
+              <td><img src="./pics/star.png" width="25px" height="25px"></td>
+              <td>
+                <div class="token_item">
+                  <img src="./pics/globe.png" width="32px" height="32px">
+                  <div class="token_name">Token</div>
+                </div>
+              </td>
+              <td>$0.16</td>
+              <td class="mob_none">2.83%</td>
+              <td class="mob_none">-32.32%</td>
+              <td class="mob_none">-89.45%</td>
+              <td class="mob_none">$32,435,876.23</td>
+              <td class="mob_none"></td>
+            </tr>
+            <tr class="tok_row">
+              <td><img src="./pics/star.png" width="25px" height="25px"></td>
+              <td>
+                <div class="token_item">
+                  <img src="./pics/globe.png" width="32px" height="32px">
+                  <div class="token_name">Token</div>
+                </div>
+              </td>
+              <td>$0.16</td>
+              <td class="mob_none">2.83%</td>
+              <td class="mob_none">32.32%</td>
+              <td class="mob_none">89.45%</td>
+              <td class="mob_none">$32,435,876.23</td>
+              <td class="mob_none"></td>
+            </tr>
+          </table>
+          </div>
+
+          <div class="table" id="table-3">
+            <table >
+              <tr class="mob_none">
+                <th></th>
+                <th>Token</th>
+                <th>Price</th>
+                <th>1hr %</th>
+                <th>24hr %</th>
+                <th>7d %</th>
+                <th>Market cap</th>
+                <th>Last 7d</th>
+              </tr>
+              <tr class="tok_row">
+                <td><img src="./pics/star.png" width="25px" height="25px"></td>
+                  <td>
+                    <div class="token_item">
+                      <img src="./pics/globe.png" width="32px" height="32px">
+                      <div class="token_name">Token</div>
+                    </div>
+                  </td>
+                  <td>$0.16</td>
+                  <td class="mob_none">2.83%</td>
+                  <td class="mob_none">32.32%</td>
+                  <td class="mob_none">89.45%</td>
+                  <td class="mob_none">$32,435,876.23</td>
+                  <td class="mob_none"></td>
+            </tr>
+          </table>
+          </div>
+
+          <!-- </div> -->
+      <!-- </div> -->
+      <div class="tokens_table">
+        <div class="table_name">Web3 Apps</div>
+        <div class="token_chose">
+          <a class="main_chose_block_link" data-tok="block-1">DeFi</a>
+          <a class="main_chose_block_link" data-tok="block-2">NFT Marketplaces</a>
+        </div>
+        <div class="tok" id="block-1">
+          <div class="t_block">
+            <div class="t_intro">
+              <img src="./pics/globe.png" width="20px" height="20px">
+              <div class="t_name">Aav</div>
+            </div>
+            <div class="t_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quisquam!</div>
+          </div>
+          <div class="t_block">
+            <div class="t_intro">
+            <img src="./pics/globe.png" width="20px" height="20px">
+            <div class="t_name">Stargate</div>
+          </div>
+            <div class="t_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, beatae.</div>
+          </div>
+          <div class="t_block">
+            <div class="t_intro">
+            <img src="./pics/globe.png" width="20px" height="20px">
+            <div class="t_name">Cuve</div>
+          </div>
+            <div class="t_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, veniam.</div>
+          </div>
+          <div class="t_block">
+            <div class="t_intro">
+            <img src="./pics/globe.png" width="20px" height="20px">
+            <div class="t_name">Compoud</div>
+          </div>
+            <div class="t_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, esse.</div>
+          </div>
+        </div>
+
+        <div class="tok" id="block-2">
+          <div class="t_block">
+            <div class="t_intro">
+              <img src="./pics/globe.png" width="20px" height="20px">
+              <div class="t_name">Aave</div>
+            </div>
+            <div class="t_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quisquam!</div>
+          </div>
+          <div class="t_block">
+            <div class="t_intro">
+            <img src="./pics/globe.png" width="20px" height="20px">
+            <div class="t_name">Stargate</div>
+          </div>
+            <div class="t_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, beatae.</div>
+          </div>
+          <div class="t_block">
+            <div class="t_intro">
+            <img src="./pics/globe.png" width="20px" height="20px">
+            <div class="t_name">Currve</div>
+          </div>
+            <div class="t_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, veniam.</div>
+          </div>
+          <div class="t_block">
+            <div class="t_intro">
+            <img src="./pics/globe.png" width="20px" height="20px">
+            <div class="t_name">Compoud</div>
+          </div>
+            <div class="t_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, esse.</div>
+          </div>
+        </div>
+      </div> <!--token-table-->
+    </div> <!--explore-->
+  </div>
+    <div class="section buy" id="buy">
+      <div class="header">
+        <div class="header_name">Buy</div>
+        <div class="header_btn header2">
+          <div class="search_form">
+            <input class = "search_text" placeholder="Search for a token..." type="text">
+            <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+          </div>
+          <div class="header2_not">
+            <img src="./pics/notification-bell.png" width="32px" height="32px">
+          </div>
+          <div class="header2_b">
+            <img class = "mobile_side2" src = "./pics/menu.png" width="32px" height="32px">
+            <button class="button header2_btn header_but">Connect Wallet</button>
+          </div>
+        </div>
+      </div>
+      <div class="buysell">
+        <div class="buysell_window">
+          <div class="token_chose">
+              <div class="main_chose tec_page">Buy</div>
+              <div class="main_chose" id="sell-link">Sell</div>
+              <img class ="order_btn" src="./pics/book.png" width="25px" height="25px">
+          </div>
+
+
+
+       <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+       <script>
+$(document).ready(function($) {
+$('.pop').click(function() {
+$('.popup_fade').fadeIn();
+return false;
+});	
+
+$('.navbar-toggler-icon').click(function() {
+$(this).parents('.popup_fade').fadeOut();
+return false;
+});
+$('.popup_fade').click(function(e) {
+if ($(e.target).closest('.popup').length == 0) {
+ $(this).fadeOut();					
+}
+});
+});
+</script>
+
+<script>
+  $(document).ready(function($) {
+  $('.cur').click(function() {
+  $('.popup_fade_cur').fadeIn();
+  return false;
+  });	
+  
+  $('.navbar-toggler-icon').click(function() {
+  $(this).parents('.popup_fade_cur').fadeOut();
+  return false;
+  });
+  $('.popup_fade_cur').click(function(e) {
+  if ($(e.target).closest('.popup').length == 0) {
+   $(this).fadeOut();					
+  }
+  });
+  });
+  </script>
+
+<script>
+  $(document).ready(function($) {
+  $('.order_btn').click(function() {
+  $('.popup_fade_order').fadeIn();
+  return false;
+  });	
+  
+  $('.navbar-toggler-icon').click(function() {
+  $(this).parents('.popup_fade_order').fadeOut();
+  return false;
+  });
+  $('.popup_fade_order').click(function(e) {
+  if ($(e.target).closest('.popup').length == 0) {
+   $(this).fadeOut();					
+  }
+  });
+  });
+  </script>
+
+            <div class="buysell_operation">
+              <div class="buysell_sum">
+                <div class="buysell_reg">
+                  <button class="chose pop">DE <img src="./pics/chevron-down.png"  height="20px" width="20px"></button>
+                  <button class="chose cur">EUR <img src="./pics/chevron-down.png"  height="20px" width="20px"></button>
+                </div>
+                <div class="buysell_cash"><input class="cash" type text placeholder="0.00"></div>
+                <div class="buysell_tok">
+                  <div class="chose_tok"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+                </div>
+                <div class="buysell_card">
+                  <div class="chose_card"><button class="chose2">Debit or Credit <img src="./pics/chevron-down.png"  height="20px" width="20px"></button></div>
+                </div>
+                <div class="buysell_btn">
+                  <button class="bs_btn">Connect Wallet</button>
+                </div>
+              </div>
+            <div class="buysell_info">
+              <div class="bs_info_name">How do you want to buy your crypto?</div>
+              <div class="bs_info_text">Compare rates from these providers. Quotes are sorted by overall price.</div>
+              <div class="buy_items">
+                <div class="b_item">
+                  <div class="b_company">Revolut</div>
+                <div class="b_sum">
+                  <div class="sum_1">0.04642 ETH</div>
+                <div class="sum2">~€98.73 EUR</div>
+                </div>
+                </div>
+              <div class="b_item">
+                <div class="b_company">Mercuryo</div>
+                <div class="b_sum">
+                  <div class="sum_1">0.04642 ETH</div>
+                  <div class="sum2">~€98.73 EUR</div>
+                </div>
+                </div>
+              <div class="b_item">
+                <div class="b_company">Sardine</div>
+                <div class="b_sum">
+                  <div class="sum_1">0.04642 ETH</div>
+                  <div class="sum2">~€98.73 EUR</div>
+                </div>
+                </div>
+              <div class="b_item">
+                <div class="b_company">MoonPay</div>
+                <div class="b_sum">
+                  <div class="sum_1">0.04642 ETH</div>
+                  <div class="sum2">~€98.73 EUR</div>
+                </div>
+                </div>
+            </div> <!--info-->
+          </div> <!--operation-->
+          </div> <!--buysell window-->
+        </div> <!--buysell-->
+      </div>
+    </div> 
+
+    <div class="section sell" id="sell">
+      <div class="header">
+        <div class="header_name">Sell</div>
+        <div class="header_btn header2">
+          <div class="search_form">
+            <input class = "search_text" placeholder="Search for a token..." type="text">
+            <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+        </div>
+        <div class="header2_not">
+          <img src="./pics/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img class = "mobile_side3" src = "./pics/menu.png" width="32px" height="32px">
+          <button class="button header2_btn header_but">Connect Wallet</button>
+        </div>
+      </div>
+      </div>
+      <div class="buysell">
+        <div class="buysell_window">
+          <div class="token_chose">
+            <div class="main_chose" id="buy-link">Buy</div>
+            <div class="main_chose tec_page">Sell</div>
+            <img class="order_btn" src="./pics/book.png" width="25px" height="25px">
+          </div>
+            <div class="buysell_operation">
+          <div class="buysell_sum">
+            <div class="buysell_reg">
+              <button class="chose pop p2">DE <img src="./pics/chevron-down.png"  height="20px" width="20px"></button>
+              <button class="chose cur c2">EUR <img src="./pics/chevron-down.png"  height="20px" width="20px"></button>
+          </div>
+            <div class="buysell_cash"><input class="cash" type text placeholder="0.00"></div>
+            <div class="buysell_tok">
+              <div class="chose_tok"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+            </div>
+            <div class="buysell_card">
+              <div class="chose_card"><button class="chose2">Debit or Credit <img src="./pics/chevron-down.png"  height="20px" width="20px"></button></div>
+            </div>
+            <div class="buysell_btn">
+              <button class="bs_btn">Connect Wallet</button>
+            </div>
+          </div>
+          <div class="buysell_info">
+            <div class="bs_info_name">How do you want to sell your crypto?</div>
+            <div class="bs_info_text">Compare rates from these providers. Quotes are sorted by overall price.</div>
+            <div class="buy_items">
+              <div class="b_item">
+                <div class="b_company">Revolut</div>
+                <div class="b_sum">
+                  <div class="sum_1">0.04642 ETH</div>
+                  <div class="sum2">~€98.73 EUR</div>
+                </div>
+              </div>
+              <div class="b_item">
+                <div class="b_company">Mercuryo</div>
+                <div class="b_sum">
+                  <div class="sum_1">0.04642 ETH</div>
+                  <div class="sum2">~€98.73 EUR</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <div class="section swap" id="swap">
+      <div class="header">
+        <div class="header_name">Swap</div>
+        <div class="header_btn header2">
+          <div class="search_form">
+            <input class = "search_text" placeholder="Search for a token..." type="text">
+            <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+        </div>
+        <div class="header2_not">
+          <img src="./pics/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img class = "mobile_side4" src = "./pics/menu.png" width="32px" height="32px">
+          <button class="button header2_btn header_but">Connect Wallet</button>
+        </div>
+      </div>
+      </div>
+      <div class="swap_box">
+        <div class="swap_form">
+          <div class="swap_token"><div class="chose_tok"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div></div>
+          <div class="swap_from">
+            <div class="from_name">Swap from</div>
+            <div class="from_chose">
+              <div class="from_select"><div class="chose_tok from_s"><button class="chose2">Select... <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div></div>
+              <div class="from_input"><input type="text" placeholder="0"></div>
+            </div>
+          </div>
+          <div class="swap_to">
+            <div class="from_name">Swap to</div>
+            <div class="chose_tok"><button class="chose2">Select a token <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+          </div>
+          <div class="swap_per">
+            <div class="per">Slippage Tolerance</div>
+            <div class="per"><img src="./pics/info.png" width="20px" height="20px"></div>
+            <div class="per"><button class="per_btn">2%</button></div>
+            <div class="per"><button class="per_btn">3%</button></div>
+            <div class="per"><input class="per_input" placeholder="custom" type="text"></div>
+          </div>
+          <div class="swap_btn"><button class="bs_btn">Connect Wallet</button></div>
+      </div>
+      </div>
+    </div>
+    <div class="section bridge" id="bridge">
+      <div class="header">
+        <div class="header_name">Bridge</div>
+        <div class="header_btn header2">
+          <div class="search_form">
+            <input class = "search_text" placeholder="Search for a token..." type="text">
+            <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+        </div>
+        <div class="header2_not">
+          <img src="./pics/notification-bell.png" width="32px" height="32px">
+        </div>
+        <div class="header2_b">
+          <img class = "mobile_side5" src = "./pics/menu.png" width="32px" height="32px">
+          <button class="button header2_btn header_but">Connect Wallet</button>
+        </div>
+      </div>
+      </div>
+      <div class="bridge_window">
+        <div class="bridge_box">
+          <div class="bridge_info">
+            <div class="bridge_main">
+              <div class="bridge_name">Bridge tokens</div>
+              <div class="bridge_icons">
+                <img class="order_btn" src="./pics/book.png" width="32px" height="32px">
+              </div>
+            </div>
+            <div class="bridge_text">Transfer your tokens from one network to another. </div>
+            <a class="bridge_link">Show more</a>
+          </div>
+          <div class="bridge_form">
+            <div class="bridge_block">
+              <div class="bridge_item"><div class="block_text">From this network</div></div>
+              <div class="bridge_item"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+              <div class="bridge_item"><div class="block_text">You send</div></div>
+              <div class="bridge_item"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+            </div>
+            <div class="bridge_block br_ic">
+            </div>
+            <div class="bridge_block">
+              <div class="bridge_item"><div class="block_text">To this network</div></div>
+              <div class="bridge_item"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+              <div class="bridge_item"><div class="block_text">You recieve</div></div>
+              <div class="bridge_item"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+        <button class="bridge_btn">Connect Wallet</button>
+    </div>
+
+      <div class="section send" id="send">
+        <div class="header">
+          <div class="header_name">Send</div>
+          <div class="header_btn header2">
+            <div class="search_form">
+              <input class = "search_text" placeholder="Search for a token..." type="text">
+              <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+          </div>
+          <div class="header2_not">
+            <img src="./pics/notification-bell.png" width="32px" height="32px">
+          </div>
+          <div class="header2_b">
+            <img class = "mobile_side6" src = "./pics/menu.png" width="32px" height="32px">
+            <button class="button header2_btn header_but">Connect Wallet</button>
+          </div>
+        </div>
+        </div>
+        <div class="send_window">
+            <div class="send_form">
+            <div class="send_chose">
+              <a href="#" class="s_chose" data-senditem="item-1">Send</a>
+              <a href="#" class="s_chose" data-senditem="item-2">Recieve</a>
+            </div>
+            <div class="senditem" id="item-1">
+              <div class="s_item">
+                <div class="s_text">Send from</div>
+                <div class="s_select"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+                </div>
+              <div class="s_item">
+                <div class="s_text">Send to</div>
+              <div class="s_select"><button class="chose2">Ethereum <img src="./pics/chevron-down-svgrepo-com.svg" height="20px" width="20px"></button></div>
+              </div>
+              <div class="s_item">
+                <div class="s_text">Asset</div>
+              <div class="s_select"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+              </div>
+              <div class="s_item">
+                <div class="s_text">Amount</div>
+              <div class="s_select"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+              </div>
+              <button class="button header2_btn">Connect Wallet</button>
+            </div>
+
+            <div class="senditem" id="item-2">
+              <div class="s_item">
+                <div class="s_text">Recieve from</div>
+                <div class="s_select"><button class="chose2">Ethereum <img src="./pics/chevron-down.png" height="20px" width="20px"></button></div>
+                </div>
+              <button class="button header2_btn">Connect Wallet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      <div class="popup_fade_order">
+        <div class="popup " id="draggable">
+           <span class="navbar-toggler-icon">&times;</span>
+          <div class="modal_block">
+            <div class="modal_header">
+              <div class="modal_name">All orders</div>
+              <div class="orders_cat">
+                <a href ="#" class="modal_hist_link" data-order="order-1">All</a>
+                <a href ="#" class="modal_hist_link" data-order="order-2">Buy</a>
+                <a href ="#" class="modal_hist_link" data-order="order-3">Sell</a>
+                <a href ="#" class="modal_hist_link" data-order="order-4">Bridge</a>
+              </div>
+            </div>
+            <div class="modal_body">
+              <div class="modal_item">
+                <div class="modal_text">No orders yet</div>
+              </div>
+            </div>
+          </div>
+       </div> 
+   </div>
+
+      <div class="popup_fade">
+        <div class="popup " id="draggable">
+           <span class="navbar-toggler-icon">&times;</span>
+          <div class="modal_block">
+            <div class="modal_header">
+              <div class="modal_name">Where are you located?</div>
+              <div class="modal_text">Availability may vary based on your bank’s location and our payment providers.</div>
+              <div class="modal_search">
+                <div class="search_form search_modal">
+                  <input class = "search_text " placeholder="Search..." type="text">
+                  <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+                </div>
+              </div>
+            </div>
+            <div class="modal_body">
+              <div class="modal_item country pop2">
+                <div class="country_ic">FR</div>
+                <a class="country_name">France</a>
+              </div>
+              <div class="modal_item country pop2">
+                <div class="country_ic">DE</div>
+                <a class="country_name">Germany</a>
+              </div>
+              <div class="modal_item country pop2">
+                <div class="country_ic">CH</div>
+                <a class="country_name">Switzerland</a>
+              </div>
+              <div class="modal_item country pop2">
+                <div class="country_ic">GB</div>
+                <a class="country_name">United Kingdom</a>
+              </div>
+              <div class="modal_item country pop2">
+                <div class="country_ic">US</div>
+                <a class="country_name">United States of America</a>
+              </div>
+            </div>
+          </div>
+       </div> 
+   </div>
+
+   <div class="popup_fade_cur">
+    <div class="popup " id="draggable">
+       <span class="navbar-toggler-icon">&times;</span>
+      <div class="modal_block">
+        <div class="modal_header">
+          <div class="modal_name">Select a currency</div>
+          <div class="modal_search">
+            <div class="search_form search_modal">
+              <input class = "search_text " placeholder="Search..." type="text">
+              <button class = "search_btn" type = "submit" name="submit"><img class = "search_btn_img" src = "./pics/search.png" width="30px" height="30px"></button>    
+            </div>
+          </div>
+        </div>
+        <div class="modal_body">
+          <div class="modal_item currency cur2">
+            <div class="country_ic">EUR</div>
+            <a class="country_name">Euro</a>
+          </div>
+          <div class="modal_item currency cur2">
+            <div class="country_ic">USD</div>
+            <a class="country_name">US Dollar</a>
+          </div>
+          <div class="modal_item currency cur2">
+            <div class="country_ic">AED</div>
+            <a class="country_name">UAE Dirham</a>
+          </div>
+          <div class="modal_item currency cur2">
+            <div class="country_ic">GBP</div>
+            <a class="country_name">Pound Sterling</a>
+          </div>
+          <div class="modal_item currency cur2">
+            <div class="country_ic">CHF</div>
+            <a class="country_name">Swiss Frank</a>
+          </div>
+        </div>
+      </div>
+   </div> 
+</div>
+
+<!-- <div class="popup_fade_mobile">
+  <div class="popup " id="draggable">
+     <span class="navbar-toggler-icon">&times;</span>
+     <div class="sidebar">
+      <div class=" side d-flex flex-column flex-shrink-0 p-3 bg-body-white" >
+          <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img class="sidebar_icon" src="./pics/free-icon-crypto-9308135.png" width="32px" height="32px">
+            <span class="fs-4">My Wallet</span>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page" data-section="dashboard">
+                <img class="sidebar_icon" src="./pics/home.png" width="16px" height="16px">
+                <div class="side_name"> Dashboard</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="explore" style="color: black;">
+                <img class="sidebar_icon" src="./pics/compass.png" width="16px" height="16px">
+                <div class="side_name">Explore</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="buy" style="color: black;">
+                <img class="sidebar_icon" src="./pics/selection-on.png" width="16px" height="16px">
+                <div class="side_name">Buy</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="sell" style="color: black;">
+                <img class="sidebar_icon" src="./pics/selection-off.png" width="16px" height="16px">
+                <div class="side_name">Sell</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="swap" style="color: black;">
+                <img class="sidebar_icon" src="./pics/refresh-2.png" width="16px" height="16px">
+                <div class="side_name">Swap</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="bridge" style="color: black;">
+                <img class="sidebar_icon" src="./pics/forward.png" width="16px" height="16px" fill="none">
+                <div class="side_name">Bridge</div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link" data-section="send" style="color: black;">
+                <img class="sidebar_icon" src="./pics/send.png" width="16px" height="16px">
+                <div class="side_name">Send/Recieve</div>
+              </a>
+            </li>
+          </ul>
+          <hr>
+          <div class="dropdown">
+            <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+              <strong>Account</strong>
+            </a>
+            <ul class="dropdown-menu text-small shadow">
+              <li><a class="dropdown-item" href="#">New wallet</a></li>
+              <li><a class="dropdown-item" id ="theme_toggle" href="#">Dark theme</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+     </div>
+ </div> 
+</div> -->
+
+<!-- <script>
+  $(document).ready(function($) {
+  $('.mobile_side').click(function() {
+  $('.popup_fade_mobile').fadeIn();
+  return false;
+  });	
+  
+  $('.navbar-toggler-icon').click(function() {
+  $(this).parents('.popup_fade_mobile').fadeOut();
+  return false;
+  });
+  $('.popup_fade_order').click(function(e) {
+  if ($(e.target).closest('.popup').length == 0) {
+   $(this).fadeOut();					
+  }
+  });
+  });
+  </script> -->
+
+
+
+</div>
+
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
